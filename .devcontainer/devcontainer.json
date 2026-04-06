@@ -1,11 +1,6 @@
 {
   "name": "MuseOS Build Environment",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
-  "hostRequirements": {
-    "cpus": 8,
-    "memory": "32gb",
-    "storage": "128gb"
-  },
   "features": {
     "ghcr.io/devcontainers/features/git:1": {},
     "ghcr.io/devcontainers/features/common-utils:2": {}
