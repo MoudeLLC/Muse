@@ -1,0 +1,17 @@
+image: gitpod/workspace-full
+
+tasks:
+  - name: Build MuseOS
+    command: |
+      echo "MuseOS Build Environment Ready"
+      echo "Run: bash build-museos.sh to start"
+
+vscode:
+  extensions:
+    - ms-vscode.cpptools
+
+github:
+  prebuilds:
+    master: true
+    branches: true
+    pullRequests: true
