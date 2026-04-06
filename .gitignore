@@ -1,0 +1,28 @@
+# AOSP source (too large for GitHub)
+aosp-full/
+MuseOS-AOSP/source/
+MuseOS-AOSP/output/
+MuseOS-AOSP/build-output/
+
+# Build outputs
+*.img
+*.zip
+out/
+build/
+
+# Gradle
+.gradle/
+app/build/
+
+# IDE
+.vscode/
+.idea/
+
+# Swap files
+*.swp
+*.swo
+*~
+
+# System files
+.DS_Store
+Thumbs.db
