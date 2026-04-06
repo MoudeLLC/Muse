@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.2.0" type="partial_results">
+    <map id="UnsafeIntentLaunch">
+            <map id="unprotected">
+                <entry
+                    name="com.muse.settings.MuseSettingsActivity"
+                    boolean="true"/>
+            </map>
+    </map>
+    <map id="UnsafeImplicitIntentLaunch">
+            <map id="actionsSent">
+                    <map id="com.muse.settings.THEME_CHANGED (used to send a broadcast)">
+                        <location id="0"
+                            file="${:muse-settings*debug*MAIN*sourceProvider*0*javaDir*2}/com/muse/settings/theme/ThemeManager.kt"
+                            line="147"
+                            column="22"
+                            startOffset="4362"
+                            endLine="147"
+                            endColumn="50"
+                            endOffset="4390"/>
+                    </map>
+            </map>
+    </map>
+    <map id="UnusedResources">
+        <location id="R.string.about_museos"
+            file="${:muse-settings*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="5"
+            column="13"
+            startOffset="160"
+            endLine="5"
+            endColumn="32"
+            endOffset="179"/>
+        <location id="R.string.theme_customization"
+            file="${:muse-settings*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="6"
+            column="13"
+            startOffset="214"
+            endLine="6"
+            endColumn="39"
+            endOffset="240"/>
+        <entry
+            name="model"
+            string="string[settings(U),system_info(D),about_museos(D),theme_customization(D),app_name(U)];;;;"/>
+        <location id="R.string.system_info"
+            file="${:muse-settings*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="7"
+            column="13"
+            startOffset="282"
+            endLine="7"
+            endColumn="31"
+            endOffset="300"/>
+    </map>
+
+</incidents>

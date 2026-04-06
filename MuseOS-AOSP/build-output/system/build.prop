@@ -1,0 +1,20 @@
+# MuseOS System Properties
+
+ro.product.brand=Muse
+ro.product.name=MuseOS
+ro.product.device=museos
+ro.product.model=MuseOS Infinity
+ro.product.manufacturer=Muse
+
+ro.build.id=MUSEOS1.0
+ro.build.display.id=MuseOS 1.0 Infinity
+ro.build.version.release=14
+ro.build.type=user
+
+ro.museos.version=1.0
+ro.museos.codename=Infinity
+ro.museos.ui.style=liquid_glass
+ro.museos.ai.enabled=true
+ro.museos.blur.enabled=true
+
+persist.sys.default_launcher=com.muse.launcher

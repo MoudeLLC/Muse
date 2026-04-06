@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.2.0" type="partial_results">
+    <map id="UnsafeIntentLaunch">
+            <map id="unprotected">
+                <entry
+                    name="com.muse.android.MainActivity"
+                    boolean="true"/>
+                <entry
+                    name="com.muse.android.assistant.GennaActivity"
+                    boolean="true"/>
+            </map>
+    </map>
+    <map id="UnusedResources">
+        <location id="R.string.olivia_greeting"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="6"
+            column="13"
+            startOffset="253"
+            endLine="6"
+            endColumn="35"
+            endOffset="275"/>
+        <location id="R.string.genna_greeting"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="5"
+            column="13"
+            startOffset="174"
+            endLine="5"
+            endColumn="34"
+            endOffset="195"/>
+        <location id="R.string.infiniteui_welcome"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="4"
+            column="13"
+            startOffset="105"
+            endLine="4"
+            endColumn="38"
+            endOffset="130"/>
+        <entry
+            name="model"
+            string="string[genna_greeting(D),infiniteui_welcome(D),olivia_greeting(D),app_name(U)],style[Theme_Muse_InfiniteUI(U)];;;;"/>
+    </map>
+
+</incidents>

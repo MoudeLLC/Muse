@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.muse.os.museos-merged_res-8:/values-bn/values-bn.xml",
+            "map": [
+                {
+                    "source": "/home/aimoude149/.gradle/caches/transforms-3/073b30953a677e2a926c0f17065fa4c3/transformed/core-1.12.0/res/values-bn/values-bn.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,154,256,358,461,562,664,784",
+                        "endColumns": "98,101,101,102,100,101,119,100",
+                        "endOffsets": "149,251,353,456,557,659,779,880"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.muse.os.museos-mergeReleaseResources-6:/values-bn/values-bn.xml",
+            "map": [
+                {
+                    "source": "/home/aimoude149/.gradle/caches/transforms-3/073b30953a677e2a926c0f17065fa4c3/transformed/core-1.12.0/res/values-bn/values-bn.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,154,256,358,461,562,664,784",
+                        "endColumns": "98,101,101,102,100,101,119,100",
+                        "endOffsets": "149,251,353,456,557,659,779,880"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.2.0" type="conditional_incidents">
+
+    <incident
+        id="PermissionImpliesUnsupportedChromeOsHardware"
+        severity="error"
+        message="Permission exists without corresponding hardware `&lt;uses-feature android:name=&quot;android.hardware.telephony&quot; required=&quot;false&quot;>` tag">
+        <fix-data featureName="android.hardware.telephony"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
+            line="7"
+            column="6"
+            startOffset="332"
+            endLine="7"
+            endColumn="21"
+            endOffset="347"/>
+        <map>
+            <condition library="false"/>
+        </map>
+    </incident>
+
+    <incident
+        id="PermissionImpliesUnsupportedChromeOsHardware"
+        severity="error"
+        message="Permission exists without corresponding hardware `&lt;uses-feature android:name=&quot;android.hardware.telephony&quot; required=&quot;false&quot;>` tag">
+        <fix-data featureName="android.hardware.telephony"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
+            line="8"
+            column="6"
+            startOffset="401"
+            endLine="8"
+            endColumn="21"
+            endOffset="416"/>
+        <map>
+            <condition library="false"/>
+        </map>
+    </incident>
+
+</incidents>

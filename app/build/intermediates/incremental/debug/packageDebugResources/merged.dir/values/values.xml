@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Muse</string>
+    <string name="genna_greeting">Hi, I\'m Genna. How can I help you?</string>
+    <string name="infiniteui_welcome">Welcome to InfiniteUI</string>
+    <string name="olivia_greeting">Hi, I\'m Olivia. Let\'s create something amazing!</string>
+    <style name="Theme.Muse.InfiniteUI" parent="android:Theme.Material.Light.NoActionBar">
+        
+    </style>
+</resources>

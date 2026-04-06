@@ -1,0 +1,28 @@
+{
+  "device_name": "Muse Phone",
+  "os": "MuseOS",
+  "ai_assistant": "Genna",
+  "processor": {
+    "name": "Muse Quantum Chip",
+    "cores": 8,
+    "ai_cores": 4,
+    "neural_engine": "GaxialAI NPU"
+  },
+  "display": {
+    "size": "6.7 inches",
+    "resolution": "3200x1440",
+    "refresh_rate": "120Hz",
+    "design": "Universe AMOLED"
+  },
+  "camera": {
+    "main": "200MP",
+    "ultra_wide": "50MP",
+    "telephoto": "50MP",
+    "ai_enhancement": "GaxialAI Vision"
+  },
+  "battery": {
+    "capacity": "5000mAh",
+    "fast_charging": "65W",
+    "wireless_charging": "30W"
+  }
+}

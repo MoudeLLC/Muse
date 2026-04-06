@@ -1,0 +1,28 @@
+// InfiniteUI Launcher - System Launcher for MuseOS
+
+android_app {
+    name: "InfiniteUILauncher",
+    
+    srcs: ["src/**/*.kt"],
+    resource_dirs: ["res"],
+    
+    platform_apis: true,
+    certificate: "platform",
+    privileged: true,
+    system_ext_specific: true,
+    
+    static_libs: [
+        "androidx.core_core-ktx",
+        "androidx.compose.ui_ui",
+        "androidx.compose.material3_material3",
+        "infiniteui-framework",
+    ],
+    
+    optimize: {
+        enabled: true,
+        shrink: true,
+        obfuscate: false,
+    },
+    
+    required: ["privapp_whitelist_com.muse.infiniteui.launcher"],
+}

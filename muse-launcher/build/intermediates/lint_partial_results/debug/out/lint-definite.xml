@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.2.0" type="incidents">
+
+    <incident
+        id="ProtectedPermissions"
+        severity="error"
+        message="Permission is only granted to system apps">
+        <location
+            file="${:muse-launcher*debug*MAIN*sourceProvider*0*manifest*0}"
+            line="8"
+            column="22"
+            startOffset="444"
+            endLine="8"
+            endColumn="75"
+            endOffset="497"/>
+    </incident>
+
+    <incident
+        id="ProtectedPermissions"
+        severity="error"
+        message="Permission is only granted to system apps">
+        <location
+            file="${:muse-launcher*debug*MAIN*sourceProvider*0*manifest*0}"
+            line="9"
+            column="22"
+            startOffset="522"
+            endLine="9"
+            endColumn="70"
+            endOffset="570"/>
+    </incident>
+
+    <incident
+        id="TypographyEllipsis"
+        severity="warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?">
+        <fix-replace
+            description="Replace with …"
+            oldString="..."
+            replacement="…"/>
+        <location
+            file="${:muse-launcher*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="4"
+            column="32"
+            startOffset="133"
+            endLine="4"
+            endColumn="46"
+            endOffset="147"/>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 26">
+        <fix-data conditional="true"/>
+        <location
+            file="${:muse-launcher*debug*MAIN*sourceProvider*0*javaDir*2}/com/muse/launcher/ui/GestureHandler.kt"
+            line="71"
+            column="13"
+            startOffset="1935"
+            endLine="71"
+            endColumn="81"
+            endOffset="2003"/>
+    </incident>
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 36"
+            oldString="35"
+            replacement="36"/>
+        <location
+            file="${:muse-launcher*projectDir}/build.gradle"
+            line="13"
+            column="9"
+            startOffset="235"
+            endLine="13"
+            endColumn="21"
+            endOffset="247"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.core:core-ktx than 1.12.0 is available: 1.18.0">
+        <fix-replace
+            description="Change to 1.18.0"
+            family="Update versions"
+            oldString="1.12.0"
+            replacement="1.18.0"/>
+        <location
+            file="${:muse-launcher*projectDir}/build.gradle"
+            line="48"
+            column="20"
+            startOffset="964"
+            endLine="48"
+            endColumn="51"
+            endOffset="995"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.lifecycle:lifecycle-runtime-ktx than 2.7.0 is available: 2.10.0">
+        <fix-replace
+            description="Change to 2.10.0"
+            family="Update versions"
+            oldString="2.7.0"
+            replacement="2.10.0"/>
+        <location
+            file="${:muse-launcher*projectDir}/build.gradle"
+            line="49"
+            column="20"
+            startOffset="1015"
+            endLine="49"
+            endColumn="68"
+            endOffset="1063"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.activity:activity-compose than 1.8.2 is available: 1.13.0">
+        <fix-replace
+            description="Change to 1.13.0"
+            family="Update versions"
+            oldString="1.8.2"
+            replacement="1.13.0"/>
+        <location
+            file="${:muse-launcher*projectDir}/build.gradle"
+            line="50"
+            column="20"
+            startOffset="1083"
+            endLine="50"
+            endColumn="62"
+            endOffset="1125"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.datastore:datastore-preferences than 1.0.0 is available: 1.2.1">
+        <fix-replace
+            description="Change to 1.2.1"
+            family="Update versions"
+            oldString="1.0.0"
+            replacement="1.2.1"/>
+        <location
+            file="${:muse-launcher*projectDir}/build.gradle"
+            line="51"
+            column="20"
+            startOffset="1145"
+            endLine="51"
+            endColumn="68"
+            endOffset="1193"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.google.code.gson:gson than 2.10.1 is available: 2.11.0">
+        <fix-replace
+            description="Change to 2.11.0"
+            family="Update versions"
+            oldString="2.10.1"
+            replacement="2.11.0"/>
+        <location
+            file="${:muse-launcher*projectDir}/build.gradle"
+            line="52"
+            column="20"
+            startOffset="1213"
+            endLine="52"
+            endColumn="54"
+            endOffset="1247"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.compose:compose-bom than 2024.02.00 is available: 2026.03.01">
+        <fix-replace
+            description="Change to 2026.03.01"
+            family="Update versions"
+            oldString="2024.02.00"
+            replacement="2026.03.01"/>
+        <location
+            file="${:muse-launcher*projectDir}/build.gradle"
+            line="54"
+            column="29"
+            startOffset="1281"
+            endLine="54"
+            endColumn="70"
+            endOffset="1322"/>
+    </incident>
+
+</incidents>

@@ -1,0 +1,26 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "Muse"
+include ':app'
+include ':infiniteui'
+include ':infiniteui-sdk'
+include ':museos'
+include ':gaxialai'
+include ':muse-launcher'
+include ':muse-systemui'
+include ':muse-settings'
+include ':libicon'

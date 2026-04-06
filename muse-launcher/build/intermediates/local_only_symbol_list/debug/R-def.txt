@@ -1,0 +1,6 @@
+R_DEF: Internal format may change without notice
+local
+string ai_suggestions
+string all_apps
+string app_name
+string search_apps

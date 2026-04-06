@@ -1,0 +1,11 @@
+com.muse.gaxialai-core-1.12.0-0 /home/aimoude149/.gradle/caches/transforms-3/073b30953a677e2a926c0f17065fa4c3/transformed/core-1.12.0/res
+com.muse.gaxialai-lifecycle-runtime-2.3.1-1 /home/aimoude149/.gradle/caches/transforms-3/345ccf79957c0f9ed43b5ce9e8806f6f/transformed/lifecycle-runtime-2.3.1/res
+com.muse.gaxialai-jetified-annotation-experimental-1.3.0-2 /home/aimoude149/.gradle/caches/transforms-3/691d9da8f66f84cd5829ca426a394d1a/transformed/jetified-annotation-experimental-1.3.0/res
+com.muse.gaxialai-jetified-core-ktx-1.12.0-3 /home/aimoude149/.gradle/caches/transforms-3/a29371ea8917ba39546d66593a7c1ae8/transformed/jetified-core-ktx-1.12.0/res
+com.muse.gaxialai-pngs-4 /home/aimoude149/Muse/gaxialai/build/generated/res/pngs/release
+com.muse.gaxialai-resValues-5 /home/aimoude149/Muse/gaxialai/build/generated/res/resValues/release
+com.muse.gaxialai-mergeReleaseResources-6 /home/aimoude149/Muse/gaxialai/build/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.muse.gaxialai-mergeReleaseResources-7 /home/aimoude149/Muse/gaxialai/build/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.muse.gaxialai-merged_res-8 /home/aimoude149/Muse/gaxialai/build/intermediates/merged_res/release
+com.muse.gaxialai-main-9 /home/aimoude149/Muse/gaxialai/src/main/res
+com.muse.gaxialai-release-10 /home/aimoude149/Muse/gaxialai/src/release/res

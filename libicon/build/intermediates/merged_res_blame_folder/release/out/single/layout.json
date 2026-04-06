@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.muse.libicon-merged_res-30:/layout/notification_template_part_chronometer.xml",
+        "source": "com.muse.libicon-core-1.10.0-2:/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "com.muse.libicon-merged_res-30:/layout/notification_template_part_time.xml",
+        "source": "com.muse.libicon-core-1.10.0-2:/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "com.muse.libicon-merged_res-30:/layout/custom_dialog.xml",
+        "source": "com.muse.libicon-core-1.10.0-2:/layout/custom_dialog.xml"
+    }
+]

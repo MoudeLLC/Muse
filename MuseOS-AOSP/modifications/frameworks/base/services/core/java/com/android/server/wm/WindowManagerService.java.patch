@@ -1,0 +1,29 @@
+--- a/services/core/java/com/android/server/wm/WindowManagerService.java
++++ b/services/core/java/com/android/server/wm/WindowManagerService.java
+@@ -100,6 +100,10 @@
+     private static final String TAG = "WindowManager";
+     private static final boolean DEBUG = false;
+     
++    // MuseOS: Liquid glass blur support
++    private boolean mMuseOSBlurEnabled = true;
++    private float mMuseOSBlurRadius = 64.0f;
++    
+     final Context mContext;
+     final boolean mHaveInputMethods;
+     final boolean mAllowBootMessages;
+@@ -200,6 +204,15 @@
+         mAnimator = new WindowAnimator(this);
+         mRoot = new RootWindowContainer(this);
+         
++        // MuseOS: Initialize blur compositor
++        initMuseOSBlur();
++    }
++    
++    private void initMuseOSBlur() {
++        Slog.i(TAG, "🎨 MuseOS: Initializing liquid glass blur compositor");
++        // Native call to blur engine
++        nativeInitBlurCompositor(mMuseOSBlurRadius);
++    }
++    
++    private native void nativeInitBlurCompositor(float radius);
+ }

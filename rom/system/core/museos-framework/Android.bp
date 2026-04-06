@@ -1,0 +1,38 @@
+// MuseOS Framework - System Framework Extensions
+
+java_library {
+    name: "museos-framework",
+    installable: true,
+    
+    srcs: [
+        "src/**/*.java",
+        "src/**/*.kt",
+        "src/**/*.aidl",
+    ],
+    
+    aidl: {
+        local_include_dirs: ["src"],
+    },
+    
+    libs: [
+        "framework",
+        "framework-res",
+    ],
+    
+    static_libs: [
+        "gaxialai-sdk",
+    ],
+}
+
+// System Service
+java_library {
+    name: "museos-services",
+    installable: true,
+    
+    srcs: ["services/**/*.java"],
+    
+    libs: [
+        "services.core",
+        "museos-framework",
+    ],
+}

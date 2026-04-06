@@ -1,0 +1,23 @@
+{
+  "name": "muse-ecosystem",
+  "version": "1.0.0",
+  "description": "Muse (뮤즈) - Unlimited Next-Generation HW+SW Ecosystem",
+  "keywords": [
+    "operating-system",
+    "artificial-intelligence",
+    "design-system",
+    "hardware",
+    "software",
+    "creative-tools"
+  ],
+  "author": "Muse Technologies",
+  "license": "Proprietary",
+  "scripts": {
+    "build": "./gradlew build",
+    "build:debug": "./gradlew assembleDebug",
+    "build:release": "./gradlew assembleRelease",
+    "install": "./gradlew installDebug",
+    "clean": "./gradlew clean",
+    "test": "./gradlew test"
+  }
+}

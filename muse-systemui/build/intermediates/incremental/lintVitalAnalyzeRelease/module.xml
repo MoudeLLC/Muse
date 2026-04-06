@@ -1,0 +1,19 @@
+<lint-module
+    format="1"
+    dir="/home/aimoude149/Muse/muse-systemui"
+    name=":muse-systemui"
+    type="APP"
+    maven="Muse:muse-systemui:"
+    agpVersion="8.2.0"
+    buildFolder="build"
+    bootClassPath="/home/aimoude149/Android/Sdk/platforms/android-35/android.jar:/home/aimoude149/Android/Sdk/build-tools/34.0.0/core-lambda-stubs.jar"
+    javaSourceLevel="17"
+    compileTarget="android-35"
+    neverShrinking="true">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>

@@ -1,0 +1,7 @@
+R_DEF: Internal format may change without notice
+local
+string app_name
+string genna_greeting
+string infiniteui_welcome
+string olivia_greeting
+style Theme.Muse.InfiniteUI

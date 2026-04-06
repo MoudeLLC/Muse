@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.2.0" type="conditional_incidents">
+
+    <incident
+        id="QueryPermissionsNeeded"
+        severity="warning"
+        message="Consider adding a `&lt;queries>` declaration to your manifest when calling this \&#xA;method; see https://g.co/dev/packagevisibility for details">
+        <location
+            file="${:infiniteui*debug*MAIN*sourceProvider*0*javaDir*2}/com/muse/infiniteui/launcher/MuseLauncher.kt"
+            line="63"
+            column="24"
+            startOffset="1956"
+            endLine="63"
+            endColumn="45"
+            endOffset="1977"/>
+        <map>
+            <entry
+                name="queryAll"
+                boolean="false"/>
+        </map>
+    </incident>
+
+</incidents>

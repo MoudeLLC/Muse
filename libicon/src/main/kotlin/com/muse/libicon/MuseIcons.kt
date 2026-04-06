@@ -1,0 +1,718 @@
+package com.muse.libicon
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.PathFillType
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.StrokeCap
+import androidx.compose.ui.graphics.StrokeJoin
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+
+/**
+ * MuseOS Custom Icon Library
+ * Professional, premium icons designed specifically for MuseOS
+ */
+object MuseIcons {
+    
+    /**
+     * WiFi icon - Modern wave design
+     */
+    val Wifi: ImageVector
+        get() = ImageVector.Builder(
+            name = "Wifi",
+            defaultWidth = 24.dp,
+            defaultHeight = 24.dp,
+            viewportWidth = 24f,
+            viewportHeight = 24f
+        ).apply {
+            path(
+                fill = SolidColor(Color.Black),
+                fillAlpha = 1.0f,
+                stroke = null,
+                strokeAlpha = 1.0f,
+                strokeLineWidth = 1.0f,
+                strokeLineCap = StrokeCap.Butt,
+                strokeLineJoin = StrokeJoin.Miter,
+                strokeLineMiter = 1.0f,
+                pathFillType = PathFillType.NonZero
+            ) {
+                // WiFi waves
+                moveTo(12f, 21f)
+                lineTo(12f, 21f)
+                arcTo(1.5f, 1.5f, 0f, isMoreThanHalf = false, isPositiveArc = true, 12f, 18f)
+                arcTo(1.5f, 1.5f, 0f, isMoreThanHalf = false, isPositiveArc = true, 12f, 21f)
+                close()
+                
+                moveTo(8.5f, 16.5f)
+                arcTo(5f, 5f, 0f, isMoreThanHalf = false, isPositiveArc = true, 15.5f, 16.5f)
+                
+                moveTo(5.5f, 13.5f)
+                arcTo(9f, 9f, 0f, isMoreThanHalf = false, isPositiveArc = true, 18.5f, 13.5f)
+                
+                moveTo(2.5f, 10.5f)
+                arcTo(13f, 13f, 0f, isMoreThanHalf = false, isPositiveArc = true, 21.5f, 10.5f)
+            }
+        }.build()
+    
+    /**
+     * Bluetooth icon - Modern connected design
+     */
+    val Bluetooth: ImageVector
+        get() = ImageVector.Builder(
+            name = "Bluetooth",
+            defaultWidth = 24.dp,
+            defaultHeight = 24.dp,
+            viewportWidth = 24f,
+            viewportHeight = 24f
+        ).apply {
+            path(
+                fill = SolidColor(Color.Black),
+                fillAlpha = 1.0f
+            ) {
+                moveTo(17.71f, 7.71f)
+                lineTo(12f, 2f)
+                verticalLineTo(9.59f)
+                lineTo(6.41f, 4f)
+                lineTo(5f, 5.41f)
+                lineTo(10.59f, 11f)
+                lineTo(5f, 16.59f)
+                lineTo(6.41f, 18f)
+                lineTo(12f, 12.41f)
+                verticalLineTo(20f)
+                lineTo(17.71f, 14.29f)
+                lineTo(13.41f, 10f)
+                lineTo(17.71f, 5.71f)
+                close()
+                
+                moveTo(14f, 7.41f)
+                lineTo(15.59f, 9f)
+                lineTo(14f, 10.59f)
+                verticalLineTo(7.41f)
+                close()
+                
+                moveTo(14f, 13.41f)
+                lineTo(15.59f, 15f)
+                lineTo(14f, 16.59f)
+                verticalLineTo(13.41f)
+                close()
+            }
+        }.build()
+    
+    /**
+     * Battery icon - Sleek modern design
+     */
+    val Battery: ImageVector
+        get() = ImageVector.Builder(
+            name = "Battery",
+            defaultWidth = 24.dp,
+            defaultHeight = 24.dp,
+            viewportWidth = 24f,
+            viewportHeight = 24f
+        ).apply {
+            path(
+                fill = SolidColor(Color.Black),
+                fillAlpha = 1.0f
+            ) {
+                moveTo(15.67f, 4f)
+                horizontalLineTo(14f)
+                verticalLineTo(2f)
+                horizontalLineTo(10f)
+                verticalLineTo(4f)
+                horizontalLineTo(8.33f)
+                curveTo(7.6f, 4f, 7f, 4.6f, 7f, 5.33f)
+                verticalLineTo(20.67f)
+                curveTo(7f, 21.4f, 7.6f, 22f, 8.33f, 22f)
+                horizontalLineTo(15.67f)
+                curveTo(16.4f, 22f, 17f, 21.4f, 17f, 20.67f)
+                verticalLineTo(5.33f)
+                curveTo(17f, 4.6f, 16.4f, 4f, 15.67f, 4f)
+                close()
+            }
+        }.build()
+    
+    /**
+     * Battery Charging icon
+     */
+    val BatteryCharging: ImageVector
+        get() = ImageVector.Builder(
+            name = "BatteryCharging",
+            defaultWidth = 24.dp,
+            defaultHeight = 24.dp,
+            viewportWidth = 24f,
+            viewportHeight = 24f
+        ).apply {
+            path(
+                fill = SolidColor(Color.Black),
+                fillAlpha = 1.0f
+            ) {
+                moveTo(15.67f, 4f)
+                horizontalLineTo(14f)
+                verticalLineTo(2f)
+                horizontalLineTo(10f)
+                verticalLineTo(4f)
+                horizontalLineTo(8.33f)
+                curveTo(7.6f, 4f, 7f, 4.6f, 7f, 5.33f)
+                verticalLineTo(20.67f)
+                curveTo(7f, 21.4f, 7.6f, 22f, 8.33f, 22f)
+                horizontalLineTo(15.67f)
+                curveTo(16.4f, 22f, 17f, 21.4f, 17f, 20.67f)
+                verticalLineTo(5.33f)
+                curveTo(17f, 4.6f, 16.4f, 4f, 15.67f, 4f)
+                close()
+                
+                // Lightning bolt
+                moveTo(11f, 20f)
+                verticalLineTo(14f)
+                horizontalLineTo(9f)
+                lineTo(13f, 7f)
+                verticalLineTo(13f)
+                horizontalLineTo(15f)
+                lineTo(11f, 20f)
+                close()
+            }
+        }.build()
+    
+    /**
+     * Signal/Cellular icon - Modern bars
+     */
+    val Signal: ImageVector
+        get() = ImageVector.Builder(
+            name = "Signal",
+            defaultWidth = 24.dp,
+            defaultHeight = 24.dp,
+            viewportWidth = 24f,
+            viewportHeight = 24f
+        ).apply {
+            path(
+                fill = SolidColor(Color.Black),
+                fillAlpha = 1.0f
+            ) {
+                moveTo(2f, 22f)
+                horizontalLineTo(6f)
+                verticalLineTo(16f)
+                horizontalLineTo(2f)
+                verticalLineTo(22f)
+                close()
+                
+                moveTo(9f, 22f)
+                horizontalLineTo(13f)
+                verticalLineTo(10f)
+                horizontalLineTo(9f)
+                verticalLineTo(22f)
+                close()
+                
+                moveTo(16f, 22f)
+                horizontalLineTo(20f)
+                verticalLineTo(4f)
+                horizontalLineTo(16f)
+                verticalLineTo(22f)
+                close()
+            }
+        }.build()
+    
+    /**
+     * Brightness icon - Sun with rays
+     */
+    val Brightness: ImageVector
+        get() = ImageVector.Builder(
+            name = "Brightness",
+            defaultWidth = 24.dp,
+            defaultHeight = 24.dp,
+            viewportWidth = 24f,
+            viewportHeight = 24f
+        ).apply {
+            path(
+                fill = SolidColor(Color.Black),
+                fillAlpha = 1.0f
+            ) {
+                moveTo(12f, 18f)
+                arcTo(6f, 6f, 0f, isMoreThanHalf = false, isPositiveArc = true, 12f, 6f)
+                arcTo(6f, 6f, 0f, isMoreThanHalf = false, isPositiveArc = true, 12f, 18f)
+                close()
+                
+                moveTo(12f, 2f)
+                lineTo(12f, 4f)
+                moveTo(12f, 20f)
+                lineTo(12f, 22f)
+                moveTo(4f, 12f)
+                lineTo(2f, 12f)
+                moveTo(22f, 12f)
+                lineTo(20f, 12f)
+                moveTo(5.64f, 5.64f)
+                lineTo(7.05f, 7.05f)
+                moveTo(16.95f, 16.95f)
+                lineTo(18.36f, 18.36f)
+                moveTo(18.36f, 5.64f)
+                lineTo(16.95f, 7.05f)
+                moveTo(7.05f, 16.95f)
+                lineTo(5.64f, 18.36f)
+            }
+        }.build()
+    
+    /**
+     * Volume icon - Speaker with waves
+     */
+    val Volume: ImageVector
+        get() = ImageVector.Builder(
+            name = "Volume",
+            defaultWidth = 24.dp,
+            defaultHeight = 24.dp,
+            viewportWidth = 24f,
+            viewportHeight = 24f
+        ).apply {
+            path(
+                fill = SolidColor(Color.Black),
+                fillAlpha = 1.0f
+            ) {
+                moveTo(3f, 9f)
+                verticalLineTo(15f)
+                horizontalLineTo(7f)
+                lineTo(12f, 20f)
+                verticalLineTo(4f)
+                lineTo(7f, 9f)
+                horizontalLineTo(3f)
+                close()
+                
+                moveTo(16.5f, 12f)
+                arcTo(4.5f, 4.5f, 0f, isMoreThanHalf = false, isPositiveArc = false, 14f, 7.97f)
+                verticalLineTo(16.03f)
+                arcTo(4.5f, 4.5f, 0f, isMoreThanHalf = false, isPositiveArc = false, 16.5f, 12f)
+                close()
+                
+                moveTo(14f, 3.23f)
+                verticalLineTo(5.29f)
+                arcTo(7f, 7f, 0f, isMoreThanHalf = false, isPositiveArc = true, 14f, 18.71f)
+                verticalLineTo(20.77f)
+                arcTo(9f, 9f, 0f, isMoreThanHalf = false, isPositiveArc = false, 14f, 3.23f)
+                close()
+            }
+        }.build()
+    
+    /**
+     * Airplane Mode icon
+     */
+    val AirplaneMode: ImageVector
+        get() = ImageVector.Builder(
+            name = "AirplaneMode",
+            defaultWidth = 24.dp,
+            defaultHeight = 24.dp,
+            viewportWidth = 24f,
+            viewportHeight = 24f
+        ).apply {
+            path(
+                fill = SolidColor(Color.Black),
+                fillAlpha = 1.0f
+            ) {
+                moveTo(22f, 16f)
+                verticalLineTo(14f)
+                lineTo(13.5f, 9f)
+                verticalLineTo(3.5f)
+                arcTo(1.5f, 1.5f, 0f, isMoreThanHalf = false, isPositiveArc = false, 10.5f, 3.5f)
+                verticalLineTo(9f)
+                lineTo(2f, 14f)
+                verticalLineTo(16f)
+                lineTo(10.5f, 13.5f)
+                verticalLineTo(19f)
+                lineTo(8f, 20.5f)
+                verticalLineTo(22f)
+                lineTo(12f, 21f)
+                lineTo(16f, 22f)
+                verticalLineTo(20.5f)
+                lineTo(13.5f, 19f)
+                verticalLineTo(13.5f)
+                lineTo(22f, 16f)
+                close()
+            }
+        }.build()
+    
+    /**
+     * Flashlight icon
+     */
+    val Flashlight: ImageVector
+        get() = ImageVector.Builder(
+            name = "Flashlight",
+            defaultWidth = 24.dp,
+            defaultHeight = 24.dp,
+            viewportWidth = 24f,
+            viewportHeight = 24f
+        ).apply {
+            path(
+                fill = SolidColor(Color.Black),
+                fillAlpha = 1.0f
+            ) {
+                moveTo(6f, 2f)
+                verticalLineTo(8f)
+                lineTo(9f, 12f)
+                verticalLineTo(22f)
+                horizontalLineTo(15f)
+                verticalLineTo(12f)
+                lineTo(18f, 8f)
+                verticalLineTo(2f)
+                horizontalLineTo(6f)
+                close()
+                
+                moveTo(12f, 15f)
+                arcTo(1.5f, 1.5f, 0f, isMoreThanHalf = false, isPositiveArc = true, 12f, 12f)
+                arcTo(1.5f, 1.5f, 0f, isMoreThanHalf = false, isPositiveArc = true, 12f, 15f)
+                close()
+            }
+        }.build()
+    
+    /**
+     * Rotation Lock icon
+     */
+    val RotationLock: ImageVector
+        get() = ImageVector.Builder(
+            name = "RotationLock",
+            defaultWidth = 24.dp,
+            defaultHeight = 24.dp,
+            viewportWidth = 24f,
+            viewportHeight = 24f
+        ).apply {
+            path(
+                fill = SolidColor(Color.Black),
+                fillAlpha = 1.0f
+            ) {
+                moveTo(19f, 12f)
+                verticalLineTo(18f)
+                horizontalLineTo(5f)
+                verticalLineTo(12f)
+                horizontalLineTo(3f)
+                verticalLineTo(18f)
+                arcTo(2f, 2f, 0f, isMoreThanHalf = false, isPositiveArc = false, 5f, 20f)
+                horizontalLineTo(19f)
+                arcTo(2f, 2f, 0f, isMoreThanHalf = false, isPositiveArc = false, 21f, 18f)
+                verticalLineTo(12f)
+                horizontalLineTo(19f)
+                close()
+                
+                moveTo(12f, 2f)
+                arcTo(5f, 5f, 0f, isMoreThanHalf = false, isPositiveArc = false, 7f, 7f)
+                horizontalLineTo(9f)
+                arcTo(3f, 3f, 0f, isMoreThanHalf = false, isPositiveArc = true, 15f, 7f)
+                verticalLineTo(10f)
+                horizontalLineTo(17f)
+                verticalLineTo(7f)
+                arcTo(5f, 5f, 0f, isMoreThanHalf = false, isPositiveArc = false, 12f, 2f)
+                close()
+            }
+        }.build()
+}
+
+    
+    /**
+     * Home icon - house shape
+     */
+    val Home: ImageVector
+        get() = ImageVector.Builder(
+            name = "Home",
+            defaultWidth = 24.dp,
+            defaultHeight = 24.dp,
+            viewportWidth = 24f,
+            viewportHeight = 24f
+        ).apply {
+            path(
+                fill = SolidColor(Color.Black),
+                fillAlpha = 1.0f
+            ) {
+                moveTo(12f, 3f)
+                lineTo(2f, 12f)
+                lineTo(5f, 12f)
+                lineTo(5f, 20f)
+                lineTo(11f, 20f)
+                lineTo(11f, 14f)
+                lineTo(13f, 14f)
+                lineTo(13f, 20f)
+                lineTo(19f, 20f)
+                lineTo(19f, 12f)
+                lineTo(22f, 12f)
+                close()
+            }
+        }.build()
+    
+    /**
+     * Settings icon - gear
+     */
+    val Settings: ImageVector
+        get() = ImageVector.Builder(
+            name = "Settings",
+            defaultWidth = 24.dp,
+            defaultHeight = 24.dp,
+            viewportWidth = 24f,
+            viewportHeight = 24f
+        ).apply {
+            path(
+                fill = SolidColor(Color.Black),
+                fillAlpha = 1.0f
+            ) {
+                moveTo(19.14f, 12.94f)
+                arcTo(7.5f, 7.5f, 0f, isMoreThanHalf = false, isPositiveArc = false, 19.5f, 12f)
+                arcTo(7.5f, 7.5f, 0f, isMoreThanHalf = false, isPositiveArc = false, 19.14f, 11.06f)
+                lineTo(21.16f, 9.48f)
+                lineTo(19.16f, 6.52f)
+                lineTo(16.9f, 7.28f)
+                arcTo(7.5f, 7.5f, 0f, isMoreThanHalf = false, isPositiveArc = false, 15.28f, 5.9f)
+                lineTo(15.52f, 3.5f)
+                lineTo(12.48f, 3.5f)
+                lineTo(12.72f, 5.9f)
+                arcTo(7.5f, 7.5f, 0f, isMoreThanHalf = false, isPositiveArc = false, 11.1f, 7.28f)
+                lineTo(8.84f, 6.52f)
+                lineTo(6.84f, 9.48f)
+                lineTo(8.86f, 11.06f)
+                arcTo(7.5f, 7.5f, 0f, isMoreThanHalf = false, isPositiveArc = false, 8.5f, 12f)
+                arcTo(7.5f, 7.5f, 0f, isMoreThanHalf = false, isPositiveArc = false, 8.86f, 12.94f)
+                lineTo(6.84f, 14.52f)
+                lineTo(8.84f, 17.48f)
+                lineTo(11.1f, 16.72f)
+                arcTo(7.5f, 7.5f, 0f, isMoreThanHalf = false, isPositiveArc = false, 12.72f, 18.1f)
+                lineTo(12.48f, 20.5f)
+                lineTo(15.52f, 20.5f)
+                lineTo(15.28f, 18.1f)
+                arcTo(7.5f, 7.5f, 0f, isMoreThanHalf = false, isPositiveArc = false, 16.9f, 16.72f)
+                lineTo(19.16f, 17.48f)
+                lineTo(21.16f, 14.52f)
+                close()
+                
+                moveTo(12f, 15f)
+                arcTo(3f, 3f, 0f, isMoreThanHalf = false, isPositiveArc = true, 12f, 9f)
+                arcTo(3f, 3f, 0f, isMoreThanHalf = false, isPositiveArc = true, 12f, 15f)
+                close()
+            }
+        }.build()
+
+    
+    /**
+     * Apps icon - grid of squares
+     */
+    val Apps: ImageVector
+        get() = ImageVector.Builder(
+            name = "Apps",
+            defaultWidth = 24.dp,
+            defaultHeight = 24.dp,
+            viewportWidth = 24f,
+            viewportHeight = 24f
+        ).apply {
+            path(
+                fill = SolidColor(Color.Black),
+                fillAlpha = 1.0f
+            ) {
+                moveTo(4f, 8f)
+                horizontalLineTo(8f)
+                verticalLineTo(4f)
+                horizontalLineTo(4f)
+                verticalLineTo(8f)
+                close()
+                
+                moveTo(10f, 20f)
+                horizontalLineTo(14f)
+                verticalLineTo(16f)
+                horizontalLineTo(10f)
+                verticalLineTo(20f)
+                close()
+                
+                moveTo(4f, 20f)
+                horizontalLineTo(8f)
+                verticalLineTo(16f)
+                horizontalLineTo(4f)
+                verticalLineTo(20f)
+                close()
+                
+                moveTo(4f, 14f)
+                horizontalLineTo(8f)
+                verticalLineTo(10f)
+                horizontalLineTo(4f)
+                verticalLineTo(14f)
+                close()
+                
+                moveTo(10f, 14f)
+                horizontalLineTo(14f)
+                verticalLineTo(10f)
+                horizontalLineTo(10f)
+                verticalLineTo(14f)
+                close()
+                
+                moveTo(16f, 4f)
+                verticalLineTo(8f)
+                horizontalLineTo(20f)
+                verticalLineTo(4f)
+                horizontalLineTo(16f)
+                close()
+                
+                moveTo(10f, 8f)
+                horizontalLineTo(14f)
+                verticalLineTo(4f)
+                horizontalLineTo(10f)
+                verticalLineTo(8f)
+                close()
+                
+                moveTo(16f, 14f)
+                horizontalLineTo(20f)
+                verticalLineTo(10f)
+                horizontalLineTo(16f)
+                verticalLineTo(14f)
+                close()
+                
+                moveTo(16f, 20f)
+                horizontalLineTo(20f)
+                verticalLineTo(16f)
+                horizontalLineTo(16f)
+                verticalLineTo(20f)
+                close()
+            }
+        }.build()
+    
+    /**
+     * Notification icon - bell
+     */
+    val Notification: ImageVector
+        get() = ImageVector.Builder(
+            name = "Notification",
+            defaultWidth = 24.dp,
+            defaultHeight = 24.dp,
+            viewportWidth = 24f,
+            viewportHeight = 24f
+        ).apply {
+            path(
+                fill = SolidColor(Color.Black),
+                fillAlpha = 1.0f
+            ) {
+                moveTo(12f, 22f)
+                arcTo(2f, 2f, 0f, isMoreThanHalf = false, isPositiveArc = false, 14f, 20f)
+                horizontalLineTo(10f)
+                arcTo(2f, 2f, 0f, isMoreThanHalf = false, isPositiveArc = false, 12f, 22f)
+                close()
+                
+                moveTo(18f, 16f)
+                verticalLineTo(11f)
+                arcTo(6f, 6f, 0f, isMoreThanHalf = false, isPositiveArc = false, 13f, 5.18f)
+                verticalLineTo(5f)
+                arcTo(1f, 1f, 0f, isMoreThanHalf = false, isPositiveArc = false, 11f, 5f)
+                verticalLineTo(5.18f)
+                arcTo(6f, 6f, 0f, isMoreThanHalf = false, isPositiveArc = false, 6f, 11f)
+                verticalLineTo(16f)
+                lineTo(4f, 18f)
+                verticalLineTo(19f)
+                horizontalLineTo(20f)
+                verticalLineTo(18f)
+                lineTo(18f, 16f)
+                close()
+            }
+        }.build()
+
+    
+    /**
+     * Search icon - magnifying glass
+     */
+    val Search: ImageVector
+        get() = ImageVector.Builder(
+            name = "Search",
+            defaultWidth = 24.dp,
+            defaultHeight = 24.dp,
+            viewportWidth = 24f,
+            viewportHeight = 24f
+        ).apply {
+            path(
+                fill = SolidColor(Color.Black),
+                fillAlpha = 1.0f
+            ) {
+                moveTo(15.5f, 14f)
+                horizontalLineTo(14.71f)
+                lineTo(14.43f, 13.73f)
+                arcTo(6.5f, 6.5f, 0f, isMoreThanHalf = true, isPositiveArc = false, 13.73f, 2.43f)
+                arcTo(6.5f, 6.5f, 0f, isMoreThanHalf = false, isPositiveArc = false, 2.43f, 13.73f)
+                lineTo(2.71f, 14f)
+                horizontalLineTo(2f)
+                verticalLineTo(15.5f)
+                lineTo(6.5f, 20f)
+                lineTo(8f, 18.5f)
+                verticalLineTo(17.71f)
+                lineTo(7.73f, 17.43f)
+                arcTo(6.5f, 6.5f, 0f, isMoreThanHalf = false, isPositiveArc = false, 17.43f, 7.73f)
+                lineTo(17.71f, 8f)
+                horizontalLineTo(18.5f)
+                lineTo(23f, 3.5f)
+                lineTo(21.5f, 2f)
+                lineTo(17f, 6.5f)
+                verticalLineTo(7.29f)
+                lineTo(16.73f, 7.57f)
+                arcTo(6.47f, 6.47f, 0f, isMoreThanHalf = false, isPositiveArc = false, 15.5f, 14f)
+                close()
+            }
+        }.build()
+    
+    /**
+     * Camera icon
+     */
+    val Camera: ImageVector
+        get() = ImageVector.Builder(
+            name = "Camera",
+            defaultWidth = 24.dp,
+            defaultHeight = 24.dp,
+            viewportWidth = 24f,
+            viewportHeight = 24f
+        ).apply {
+            path(
+                fill = SolidColor(Color.Black),
+                fillAlpha = 1.0f
+            ) {
+                moveTo(9f, 2f)
+                lineTo(7.17f, 4f)
+                horizontalLineTo(4f)
+                arcTo(2f, 2f, 0f, isMoreThanHalf = false, isPositiveArc = false, 2f, 6f)
+                verticalLineTo(18f)
+                arcTo(2f, 2f, 0f, isMoreThanHalf = false, isPositiveArc = false, 4f, 20f)
+                horizontalLineTo(20f)
+                arcTo(2f, 2f, 0f, isMoreThanHalf = false, isPositiveArc = false, 22f, 18f)
+                verticalLineTo(6f)
+                arcTo(2f, 2f, 0f, isMoreThanHalf = false, isPositiveArc = false, 20f, 4f)
+                horizontalLineTo(16.83f)
+                lineTo(15f, 2f)
+                horizontalLineTo(9f)
+                close()
+                
+                moveTo(12f, 17f)
+                arcTo(5f, 5f, 0f, isMoreThanHalf = false, isPositiveArc = true, 12f, 7f)
+                arcTo(5f, 5f, 0f, isMoreThanHalf = false, isPositiveArc = true, 12f, 17f)
+                close()
+                
+                moveTo(12f, 9f)
+                arcTo(3f, 3f, 0f, isMoreThanHalf = false, isPositiveArc = false, 12f, 15f)
+                arcTo(3f, 3f, 0f, isMoreThanHalf = false, isPositiveArc = false, 12f, 9f)
+                close()
+            }
+        }.build()
+    
+    /**
+     * Phone icon
+     */
+    val Phone: ImageVector
+        get() = ImageVector.Builder(
+            name = "Phone",
+            defaultWidth = 24.dp,
+            defaultHeight = 24.dp,
+            viewportWidth = 24f,
+            viewportHeight = 24f
+        ).apply {
+            path(
+                fill = SolidColor(Color.Black),
+                fillAlpha = 1.0f
+            ) {
+                moveTo(6.62f, 10.79f)
+                curveTo(8.06f, 13.62f, 10.38f, 15.94f, 13.21f, 17.38f)
+                lineTo(15.41f, 15.18f)
+                curveTo(15.69f, 14.9f, 16.08f, 14.82f, 16.43f, 14.93f)
+                curveTo(17.55f, 15.3f, 18.75f, 15.5f, 20f, 15.5f)
+                curveTo(20.55f, 15.5f, 21f, 15.95f, 21f, 16.5f)
+                verticalLineTo(20f)
+                curveTo(21f, 20.55f, 20.55f, 21f, 20f, 21f)
+                curveTo(10.61f, 21f, 3f, 13.39f, 3f, 4f)
+                curveTo(3f, 3.45f, 3.45f, 3f, 4f, 3f)
+                horizontalLineTo(7.5f)
+                curveTo(8.05f, 3f, 8.5f, 3.45f, 8.5f, 4f)
+                curveTo(8.5f, 5.25f, 8.7f, 6.45f, 9.07f, 7.57f)
+                curveTo(9.18f, 7.92f, 9.1f, 8.31f, 8.82f, 8.59f)
+                lineTo(6.62f, 10.79f)
+                close()
+            }
+        }.build()

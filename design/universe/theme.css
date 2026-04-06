@@ -1,0 +1,22 @@
+/* Universe Design System - Cosmic-inspired expansive design */
+
+:root {
+  --universe-primary: #1a1a2e;
+  --universe-secondary: #16213e;
+  --universe-accent: #0f3460;
+  --universe-highlight: #533483;
+  --universe-cosmic: #e94560;
+  
+  --universe-spacing-cosmic: 64px;
+  --universe-spacing-galaxy: 32px;
+  --universe-spacing-star: 16px;
+  
+  --universe-radius: 24px;
+  --universe-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.universe-container {
+  background: linear-gradient(135deg, var(--universe-primary), var(--universe-secondary));
+  border-radius: var(--universe-radius);
+  box-shadow: var(--universe-shadow);
+}

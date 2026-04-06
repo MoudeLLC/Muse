@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.2.0" type="incidents">
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 36"
+            oldString="35"
+            replacement="36"/>
+        <location
+            file="${:libicon*projectDir}/build.gradle"
+            line="12"
+            column="9"
+            startOffset="188"
+            endLine="12"
+            endColumn="21"
+            endOffset="200"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.compose.ui:ui than 1.5.4 is available: 1.10.6">
+        <fix-replace
+            description="Change to 1.10.6"
+            family="Update versions"
+            oldString="1.5.4"
+            replacement="1.10.6"/>
+        <location
+            file="${:libicon*projectDir}/build.gradle"
+            line="40"
+            column="20"
+            startOffset="637"
+            endLine="40"
+            endColumn="50"
+            endOffset="667"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.compose.ui:ui-graphics than 1.5.4 is available: 1.10.6">
+        <fix-replace
+            description="Change to 1.10.6"
+            family="Update versions"
+            oldString="1.5.4"
+            replacement="1.10.6"/>
+        <location
+            file="${:libicon*projectDir}/build.gradle"
+            line="41"
+            column="20"
+            startOffset="687"
+            endLine="41"
+            endColumn="59"
+            endOffset="726"/>
+    </incident>
+
+</incidents>

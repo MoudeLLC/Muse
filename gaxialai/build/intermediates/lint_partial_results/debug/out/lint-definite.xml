@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.2.0" type="incidents">
+
+    <incident
+        id="StaticFieldLeak"
+        severity="warning"
+        message="Do not place Android context classes in static fields (static reference to `GaxialAI` which has field `context` pointing to `Context`); this is a memory leak">
+        <location
+            file="${:gaxialai*debug*MAIN*sourceProvider*0*javaDir*2}/com/muse/gaxialai/GaxialAI.kt"
+            line="22"
+            column="9"
+            startOffset="590"
+            endLine="23"
+            endColumn="47"
+            endOffset="646"/>
+    </incident>
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 36"
+            oldString="35"
+            replacement="36"/>
+        <location
+            file="${:gaxialai*projectDir}/build.gradle"
+            line="12"
+            column="9"
+            startOffset="189"
+            endLine="12"
+            endColumn="21"
+            endOffset="201"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.core:core-ktx than 1.12.0 is available: 1.18.0">
+        <fix-replace
+            description="Change to 1.18.0"
+            family="Update versions"
+            oldString="1.12.0"
+            replacement="1.18.0"/>
+        <location
+            file="${:gaxialai*projectDir}/build.gradle"
+            line="26"
+            column="20"
+            startOffset="431"
+            endLine="26"
+            endColumn="51"
+            endOffset="462"/>
+    </incident>
+
+</incidents>

@@ -1,0 +1,137 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.muse.systemui"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="35" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/home/aimoude149/Muse/muse-systemui/src/main/AndroidManifest.xml:4:5-78
+11-->/home/aimoude149/Muse/muse-systemui/src/main/AndroidManifest.xml:4:22-75
+12    <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" />
+12-->/home/aimoude149/Muse/muse-systemui/src/main/AndroidManifest.xml:5:5-93
+12-->/home/aimoude149/Muse/muse-systemui/src/main/AndroidManifest.xml:5:22-90
+13    <uses-permission android:name="android.permission.STATUS_BAR" />
+13-->/home/aimoude149/Muse/muse-systemui/src/main/AndroidManifest.xml:6:5-69
+13-->/home/aimoude149/Muse/muse-systemui/src/main/AndroidManifest.xml:6:22-66
+14    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+14-->/home/aimoude149/Muse/muse-systemui/src/main/AndroidManifest.xml:7:5-76
+14-->/home/aimoude149/Muse/muse-systemui/src/main/AndroidManifest.xml:7:22-73
+15
+16    <permission
+16-->[androidx.core:core:1.12.0] /home/aimoude149/.gradle/caches/transforms-3/073b30953a677e2a926c0f17065fa4c3/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+17        android:name="com.muse.systemui.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+17-->[androidx.core:core:1.12.0] /home/aimoude149/.gradle/caches/transforms-3/073b30953a677e2a926c0f17065fa4c3/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+18        android:protectionLevel="signature" />
+18-->[androidx.core:core:1.12.0] /home/aimoude149/.gradle/caches/transforms-3/073b30953a677e2a926c0f17065fa4c3/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+19
+20    <uses-permission android:name="com.muse.systemui.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+20-->[androidx.core:core:1.12.0] /home/aimoude149/.gradle/caches/transforms-3/073b30953a677e2a926c0f17065fa4c3/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+20-->[androidx.core:core:1.12.0] /home/aimoude149/.gradle/caches/transforms-3/073b30953a677e2a926c0f17065fa4c3/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+21
+22    <application
+22-->/home/aimoude149/Muse/muse-systemui/src/main/AndroidManifest.xml:9:5-27:19
+23        android:allowBackup="true"
+23-->/home/aimoude149/Muse/muse-systemui/src/main/AndroidManifest.xml:10:9-35
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.12.0] /home/aimoude149/.gradle/caches/transforms-3/073b30953a677e2a926c0f17065fa4c3/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+25        android:extractNativeLibs="false"
+26        android:label="@string/app_name"
+26-->/home/aimoude149/Muse/muse-systemui/src/main/AndroidManifest.xml:11:9-41
+27        android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+27-->/home/aimoude149/Muse/muse-systemui/src/main/AndroidManifest.xml:12:9-71
+28        <service
+28-->/home/aimoude149/Muse/muse-systemui/src/main/AndroidManifest.xml:14:9-17:62
+29            android:name="com.muse.systemui.SystemUIService"
+29-->/home/aimoude149/Muse/muse-systemui/src/main/AndroidManifest.xml:15:13-44
+30            android:exported="false"
+30-->/home/aimoude149/Muse/muse-systemui/src/main/AndroidManifest.xml:16:13-37
+31            android:foregroundServiceType="systemExempted" />
+31-->/home/aimoude149/Muse/muse-systemui/src/main/AndroidManifest.xml:17:13-59
+32        <service
+32-->/home/aimoude149/Muse/muse-systemui/src/main/AndroidManifest.xml:19:9-26:19
+33            android:name="com.muse.systemui.MuseNotificationListenerService"
+33-->/home/aimoude149/Muse/muse-systemui/src/main/AndroidManifest.xml:20:13-60
+34            android:exported="true"
+34-->/home/aimoude149/Muse/muse-systemui/src/main/AndroidManifest.xml:21:13-36
+35            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
+35-->/home/aimoude149/Muse/muse-systemui/src/main/AndroidManifest.xml:22:13-87
+36            <intent-filter>
+36-->/home/aimoude149/Muse/muse-systemui/src/main/AndroidManifest.xml:23:13-25:29
+37                <action android:name="android.service.notification.NotificationListenerService" />
+37-->/home/aimoude149/Muse/muse-systemui/src/main/AndroidManifest.xml:24:17-99
+37-->/home/aimoude149/Muse/muse-systemui/src/main/AndroidManifest.xml:24:25-96
+38            </intent-filter>
+39        </service>
+40
+41        <provider
+41-->[androidx.emoji2:emoji2:1.3.0] /home/aimoude149/.gradle/caches/transforms-3/51cb63e4b15bee7530de2b3cec49976f/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+42            android:name="androidx.startup.InitializationProvider"
+42-->[androidx.emoji2:emoji2:1.3.0] /home/aimoude149/.gradle/caches/transforms-3/51cb63e4b15bee7530de2b3cec49976f/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:25:13-67
+43            android:authorities="com.muse.systemui.androidx-startup"
+43-->[androidx.emoji2:emoji2:1.3.0] /home/aimoude149/.gradle/caches/transforms-3/51cb63e4b15bee7530de2b3cec49976f/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:26:13-68
+44            android:exported="false" >
+44-->[androidx.emoji2:emoji2:1.3.0] /home/aimoude149/.gradle/caches/transforms-3/51cb63e4b15bee7530de2b3cec49976f/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:27:13-37
+45            <meta-data
+45-->[androidx.emoji2:emoji2:1.3.0] /home/aimoude149/.gradle/caches/transforms-3/51cb63e4b15bee7530de2b3cec49976f/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+46                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+46-->[androidx.emoji2:emoji2:1.3.0] /home/aimoude149/.gradle/caches/transforms-3/51cb63e4b15bee7530de2b3cec49976f/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:30:17-75
+47                android:value="androidx.startup" />
+47-->[androidx.emoji2:emoji2:1.3.0] /home/aimoude149/.gradle/caches/transforms-3/51cb63e4b15bee7530de2b3cec49976f/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:31:17-49
+48            <meta-data
+48-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/aimoude149/.gradle/caches/transforms-3/55f8a2db6247ced629f4f19c874a253a/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+49                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+49-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/aimoude149/.gradle/caches/transforms-3/55f8a2db6247ced629f4f19c874a253a/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+50                android:value="androidx.startup" />
+50-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/aimoude149/.gradle/caches/transforms-3/55f8a2db6247ced629f4f19c874a253a/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+51            <meta-data
+51-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aimoude149/.gradle/caches/transforms-3/cd64bbac7c030e887ef4d9ca16abf10a/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+52                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+52-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aimoude149/.gradle/caches/transforms-3/cd64bbac7c030e887ef4d9ca16abf10a/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+53                android:value="androidx.startup" />
+53-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aimoude149/.gradle/caches/transforms-3/cd64bbac7c030e887ef4d9ca16abf10a/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+54        </provider>
+55
+56        <receiver
+56-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aimoude149/.gradle/caches/transforms-3/cd64bbac7c030e887ef4d9ca16abf10a/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+57            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+57-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aimoude149/.gradle/caches/transforms-3/cd64bbac7c030e887ef4d9ca16abf10a/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+58            android:directBootAware="false"
+58-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aimoude149/.gradle/caches/transforms-3/cd64bbac7c030e887ef4d9ca16abf10a/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+59            android:enabled="true"
+59-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aimoude149/.gradle/caches/transforms-3/cd64bbac7c030e887ef4d9ca16abf10a/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+60            android:exported="true"
+60-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aimoude149/.gradle/caches/transforms-3/cd64bbac7c030e887ef4d9ca16abf10a/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+61            android:permission="android.permission.DUMP" >
+61-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aimoude149/.gradle/caches/transforms-3/cd64bbac7c030e887ef4d9ca16abf10a/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+62            <intent-filter>
+62-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aimoude149/.gradle/caches/transforms-3/cd64bbac7c030e887ef4d9ca16abf10a/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+63                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+63-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aimoude149/.gradle/caches/transforms-3/cd64bbac7c030e887ef4d9ca16abf10a/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+63-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aimoude149/.gradle/caches/transforms-3/cd64bbac7c030e887ef4d9ca16abf10a/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+64            </intent-filter>
+65            <intent-filter>
+65-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aimoude149/.gradle/caches/transforms-3/cd64bbac7c030e887ef4d9ca16abf10a/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+66                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+66-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aimoude149/.gradle/caches/transforms-3/cd64bbac7c030e887ef4d9ca16abf10a/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+66-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aimoude149/.gradle/caches/transforms-3/cd64bbac7c030e887ef4d9ca16abf10a/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+67            </intent-filter>
+68            <intent-filter>
+68-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aimoude149/.gradle/caches/transforms-3/cd64bbac7c030e887ef4d9ca16abf10a/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+69                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+69-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aimoude149/.gradle/caches/transforms-3/cd64bbac7c030e887ef4d9ca16abf10a/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+69-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aimoude149/.gradle/caches/transforms-3/cd64bbac7c030e887ef4d9ca16abf10a/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+70            </intent-filter>
+71            <intent-filter>
+71-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aimoude149/.gradle/caches/transforms-3/cd64bbac7c030e887ef4d9ca16abf10a/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+72                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+72-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aimoude149/.gradle/caches/transforms-3/cd64bbac7c030e887ef4d9ca16abf10a/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+72-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aimoude149/.gradle/caches/transforms-3/cd64bbac7c030e887ef4d9ca16abf10a/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+73            </intent-filter>
+74        </receiver>
+75    </application>
+76
+77</manifest>

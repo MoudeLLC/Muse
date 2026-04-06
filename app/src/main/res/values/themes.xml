@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Muse.InfiniteUI" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- InfiniteUI theme will be applied via Compose -->
+    </style>
+</resources>

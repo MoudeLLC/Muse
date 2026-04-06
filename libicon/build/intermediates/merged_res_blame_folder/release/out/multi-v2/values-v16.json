@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.muse.libicon-merged_res-30:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/home/aimoude149/.gradle/caches/transforms-3/3461fed944ab9e5ef1f0b26160582f86/transformed/core-1.10.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.muse.libicon-mergeReleaseResources-28:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/home/aimoude149/.gradle/caches/transforms-3/3461fed944ab9e5ef1f0b26160582f86/transformed/core-1.10.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                }
+            ]
+        }
+    ]
+}

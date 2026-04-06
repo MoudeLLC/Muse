@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.2.0" type="partial_results">
+    <map id="UnsafeImplicitIntentLaunch">
+            <map id="actionsSent">
+                    <map id="android.settings.LOCATION_SOURCE_SETTINGS (used to start an activity)">
+                        <location id="0"
+                            file="${:muse-systemui*debug*MAIN*sourceProvider*0*javaDir*2}/com/muse/systemui/ui/QuickSettings.kt"
+                            line="111"
+                            column="38"
+                            startOffset="4557"
+                            endLine="111"
+                            endColumn="119"
+                            endOffset="4638"/>
+                    </map>
+            </map>
+    </map>
+    <map id="UnusedResources">
+        <location id="R.string.quick_settings"
+            file="${:muse-systemui*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="5"
+            column="13"
+            startOffset="170"
+            endLine="5"
+            endColumn="34"
+            endOffset="191"/>
+        <location id="R.string.notifications"
+            file="${:muse-systemui*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="4"
+            column="13"
+            startOffset="114"
+            endLine="4"
+            endColumn="33"
+            endOffset="134"/>
+        <entry
+            name="model"
+            string="string[quick_settings(D),app_name(U),control_center(D),notifications(D)];;;;"/>
+        <location id="R.string.control_center"
+            file="${:muse-systemui*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="6"
+            column="13"
+            startOffset="228"
+            endLine="6"
+            endColumn="34"
+            endOffset="249"/>
+    </map>
+
+</incidents>

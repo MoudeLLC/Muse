@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Muse Settings</string>
+    <string name="settings">Settings</string>
+    <string name="about_museos">About MuseOS</string>
+    <string name="theme_customization">Theme Customization</string>
+    <string name="system_info">System Information</string>
+</resources>

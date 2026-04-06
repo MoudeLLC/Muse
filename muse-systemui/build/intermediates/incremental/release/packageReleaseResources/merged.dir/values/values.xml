@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Muse SystemUI</string>
+    <string name="control_center">Control Center</string>
+    <string name="notifications">Notifications</string>
+    <string name="quick_settings">Quick Settings</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Muse Launcher</string>
+    <string name="search_apps">Search apps...</string>
+    <string name="ai_suggestions">AI Suggestions</string>
+    <string name="all_apps">All Apps</string>
+</resources>

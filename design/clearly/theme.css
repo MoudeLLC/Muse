@@ -1,0 +1,17 @@
+/* Clearly Design System - Clean transparent design philosophy */
+
+:root {
+  --clearly-white: #ffffff;
+  --clearly-light: #f8f9fa;
+  --clearly-border: #e9ecef;
+  --clearly-text: #212529;
+  --clearly-subtle: rgba(0, 0, 0, 0.05);
+}
+
+.clearly-card {
+  background: var(--clearly-white);
+  border: 1px solid var(--clearly-border);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px var(--clearly-subtle);
+}

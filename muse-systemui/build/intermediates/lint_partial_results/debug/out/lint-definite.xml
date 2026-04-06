@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.2.0" type="incidents">
+
+    <incident
+        id="ProtectedPermissions"
+        severity="error"
+        message="Permission is only granted to system apps">
+        <location
+            file="${:muse-systemui*debug*MAIN*sourceProvider*0*manifest*0}"
+            line="5"
+            column="22"
+            startOffset="209"
+            endLine="5"
+            endColumn="90"
+            endOffset="277"/>
+    </incident>
+
+    <incident
+        id="ProtectedPermissions"
+        severity="error"
+        message="Permission is only granted to system apps">
+        <location
+            file="${:muse-systemui*debug*MAIN*sourceProvider*0*manifest*0}"
+            line="6"
+            column="22"
+            startOffset="302"
+            endLine="6"
+            endColumn="66"
+            endOffset="346"/>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 26">
+        <fix-data conditional="true"/>
+        <location
+            file="${:muse-systemui*debug*MAIN*sourceProvider*0*javaDir*2}/com/muse/systemui/SystemUIService.kt"
+            line="53"
+            column="17"
+            startOffset="1601"
+            endLine="53"
+            endColumn="63"
+            endOffset="1647"/>
+    </incident>
+
+    <incident
+        id="WrongConstant"
+        severity="error"
+        message="Must be one of: Context.POWER_SERVICE, Context.WINDOW_SERVICE, Context.LAYOUT_INFLATER_SERVICE, Context.ACCOUNT_SERVICE, Context.ACTIVITY_SERVICE, Context.ALARM_SERVICE, Context.NOTIFICATION_SERVICE, Context.ACCESSIBILITY_SERVICE, Context.CAPTIONING_SERVICE, Context.KEYGUARD_SERVICE, Context.LOCATION_SERVICE, Context.HEALTHCONNECT_SERVICE, Context.SEARCH_SERVICE, Context.SENSOR_SERVICE, Context.STORAGE_SERVICE, Context.STORAGE_STATS_SERVICE, Context.WALLPAPER_SERVICE, Context.VIBRATOR_MANAGER_SERVICE, Context.VIBRATOR_SERVICE, Context.CONNECTIVITY_SERVICE, Context.IPSEC_SERVICE, Context.VPN_MANAGEMENT_SERVICE, Context.NETWORK_STATS_SERVICE, Context.WIFI_SERVICE, Context.WIFI_AWARE_SERVICE, Context.WIFI_P2P_SERVICE, Context.WIFI_RTT_RANGING_SERVICE, Context.NSD_SERVICE, Context.AUDIO_SERVICE, Context.FINGERPRINT_SERVICE, Context.BIOMETRIC_SERVICE, Context.MEDIA_ROUTER_SERVICE, Context.TELEPHONY_SERVICE, Context.TELEPHONY_SUBSCRIPTION_SERVICE, Context.CARRIER_CONFIG_SERVICE, Context.EUICC_SERVICE, Context.TELECOM_SERVICE, Context.CLIPBOARD_SERVICE, Context.INPUT_METHOD_SERVICE, Context.TEXT_SERVICES_MANAGER_SERVICE, Context.TEXT_CLASSIFICATION_SERVICE, Context.APPWIDGET_SERVICE, Context.DROPBOX_SERVICE, Context.DEVICE_POLICY_SERVICE, Context.UI_MODE_SERVICE, Context.DOWNLOAD_SERVICE, Context.NFC_SERVICE, Context.BLUETOOTH_SERVICE, Context.USB_SERVICE, Context.LAUNCHER_APPS_SERVICE, Context.INPUT_SERVICE, Context.DISPLAY_SERVICE, Context.USER_SERVICE, Context.RESTRICTIONS_SERVICE, Context.APP_OPS_SERVICE, Context.ROLE_SERVICE, Context.CAMERA_SERVICE, Context.PRINT_SERVICE, Context.CONSUMER_IR_SERVICE, Context.TV_INTERACTIVE_APP_SERVICE, Context.TV_INPUT_SERVICE, Context.USAGE_STATS_SERVICE, Context.MEDIA_SESSION_SERVICE, Context.MEDIA_COMMUNICATION_SERVICE, Context.BATTERY_SERVICE, Context.JOB_SCHEDULER_SERVICE, Context.PERSISTENT_DATA_BLOCK_SERVICE, Context.MEDIA_PROJECTION_SERVICE, Context.MIDI_SERVICE, Context.HARDWARE_PROPERTIES_SERVICE, Context.SHORTCUT_SERVICE, Context.SYSTEM_HEALTH_SERVICE, Context.COMPANION_DEVICE_SERVICE, Context.VIRTUAL_DEVICE_SERVICE, Context.CROSS_PROFILE_APPS_SERVICE, Context.LOCALE_SERVICE, Context.MEDIA_METRICS_SERVICE, Context.DISPLAY_HASH_SERVICE, Context.CREDENTIAL_SERVICE, Context.DEVICE_LOCK_SERVICE, Context.GRAMMATICAL_INFLECTION_SERVICE, Context.SECURITY_STATE_SERVICE, Context.CONTACT_KEYS_SERVICE">
+        <location
+            file="${:muse-systemui*debug*MAIN*sourceProvider*0*javaDir*2}/com/muse/systemui/SystemUIService.kt"
+            line="100"
+            column="53"
+            startOffset="3120"
+            endLine="100"
+            endColumn="79"
+            endOffset="3146"/>
+    </incident>
+
+    <incident
+        id="InternalInsetResource"
+        severity="warning"
+        message="Using internal inset dimension resource `status_bar_height` is not supported">
+        <location
+            file="${:muse-systemui*debug*MAIN*sourceProvider*0*javaDir*2}/com/muse/systemui/SystemUIService.kt"
+            line="112"
+            column="26"
+            startOffset="3701"
+            endLine="112"
+            endColumn="90"
+            endOffset="3765"/>
+    </incident>
+
+    <incident
+        id="DiscouragedApi"
+        severity="warning"
+        message="Use of this function is discouraged because resource reflection makes it harder to perform build optimizations and compile-time verification of code. It is much more efficient to retrieve resources by identifier (e.g. `R.foo.bar`) than by name (e.g. `getIdentifier(&quot;bar&quot;, &quot;foo&quot;, null)`).">
+        <location
+            file="${:muse-systemui*debug*MAIN*sourceProvider*0*javaDir*2}/com/muse/systemui/SystemUIService.kt"
+            line="112"
+            column="36"
+            startOffset="3711"
+            endLine="112"
+            endColumn="49"
+            endOffset="3724"/>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 26">
+        <fix-data conditional="true"/>
+        <location
+            file="${:muse-systemui*debug*MAIN*sourceProvider*0*javaDir*2}/com/muse/systemui/SystemUIService.kt"
+            line="121"
+            column="13"
+            startOffset="3998"
+            endLine="121"
+            endColumn="59"
+            endOffset="4044"/>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 26">
+        <fix-data conditional="true"/>
+        <location
+            file="${:muse-systemui*debug*MAIN*sourceProvider*0*javaDir*2}/com/muse/systemui/SystemUIService.kt"
+            line="137"
+            column="27"
+            startOffset="4601"
+            endLine="137"
+            endColumn="73"
+            endOffset="4647"/>
+    </incident>
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 36"
+            oldString="35"
+            replacement="36"/>
+        <location
+            file="${:muse-systemui*projectDir}/build.gradle"
+            line="13"
+            column="9"
+            startOffset="235"
+            endLine="13"
+            endColumn="21"
+            endOffset="247"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.core:core-ktx than 1.12.0 is available: 1.18.0">
+        <fix-replace
+            description="Change to 1.18.0"
+            family="Update versions"
+            oldString="1.12.0"
+            replacement="1.18.0"/>
+        <location
+            file="${:muse-systemui*projectDir}/build.gradle"
+            line="47"
+            column="20"
+            startOffset="860"
+            endLine="47"
+            endColumn="51"
+            endOffset="891"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.lifecycle:lifecycle-runtime-ktx than 2.7.0 is available: 2.10.0">
+        <fix-replace
+            description="Change to 2.10.0"
+            family="Update versions"
+            oldString="2.7.0"
+            replacement="2.10.0"/>
+        <location
+            file="${:muse-systemui*projectDir}/build.gradle"
+            line="48"
+            column="20"
+            startOffset="911"
+            endLine="48"
+            endColumn="68"
+            endOffset="959"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.activity:activity-compose than 1.8.2 is available: 1.13.0">
+        <fix-replace
+            description="Change to 1.13.0"
+            family="Update versions"
+            oldString="1.8.2"
+            replacement="1.13.0"/>
+        <location
+            file="${:muse-systemui*projectDir}/build.gradle"
+            line="49"
+            column="20"
+            startOffset="979"
+            endLine="49"
+            endColumn="62"
+            endOffset="1021"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.datastore:datastore-preferences than 1.0.0 is available: 1.2.1">
+        <fix-replace
+            description="Change to 1.2.1"
+            family="Update versions"
+            oldString="1.0.0"
+            replacement="1.2.1"/>
+        <location
+            file="${:muse-systemui*projectDir}/build.gradle"
+            line="50"
+            column="20"
+            startOffset="1041"
+            endLine="50"
+            endColumn="68"
+            endOffset="1089"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.compose:compose-bom than 2024.02.00 is available: 2026.03.01">
+        <fix-replace
+            description="Change to 2026.03.01"
+            family="Update versions"
+            oldString="2024.02.00"
+            replacement="2026.03.01"/>
+        <location
+            file="${:muse-systemui*projectDir}/build.gradle"
+            line="52"
+            column="29"
+            startOffset="1123"
+            endLine="52"
+            endColumn="70"
+            endOffset="1164"/>
+    </incident>
+
+</incidents>

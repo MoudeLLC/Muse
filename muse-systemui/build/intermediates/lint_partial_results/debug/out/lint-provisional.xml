@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.2.0" type="conditional_incidents">
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data minSdk="fffffffffe000000" requiresApi="fffffffff0000000"/>
+        <location
+            file="${:muse-systemui*debug*MAIN*sourceProvider*0*javaDir*2}/com/muse/systemui/SystemUIService.kt"
+            line="100"
+            column="85"
+            startOffset="3152"
+            endLine="100"
+            endColumn="113"
+            endOffset="3180"/>
+        <map>
+            <api-levels id="minSdk"
+                value="fffffffffe000000"/>
+            <api-levels id="requiresApi"
+                value="fffffffff0000000"/>
+            <entry
+                name="message"
+                string="Class requires API level 29 (current min is %1$s): `android.app.StatusBarManager`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="InlinedApi"
+        severity="warning"
+        message="">
+        <fix-data minSdk="fffffffffe000000" requiresApi="ffffffff00000000"/>
+        <location
+            file="${:muse-systemui*debug*MAIN*sourceProvider*0*javaDir*2}/com/muse/systemui/SystemUIService.kt"
+            line="100"
+            column="53"
+            startOffset="3120"
+            endLine="100"
+            endColumn="79"
+            endOffset="3146"/>
+        <map>
+            <api-levels id="minSdk"
+                value="fffffffffe000000"/>
+            <api-levels id="requiresApi"
+                value="ffffffff00000000"/>
+            <entry
+                name="message"
+                string="Field requires API level 33 (current min is %1$s): `android.content.Context#STATUS_BAR_SERVICE`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="MissingPermission"
+        severity="error"
+        message="">
+        <fix-data missing="android.permission.BLUETOOTH_CONNECT" message="Missing permissions required by BluetoothAdapter.enable: %1$s" lastApi="2147483647"/>
+        <location
+            file="${:muse-systemui*debug*MAIN*sourceProvider*0*javaDir*2}/com/muse/systemui/ui/QuickSettings.kt"
+            line="209"
+            column="13"
+            startOffset="7502"
+            endLine="209"
+            endColumn="39"
+            endOffset="7528"/>
+        <map>
+            <entry
+                name="requirement"
+                string="android.permission.BLUETOOTH_CONNECT"/>
+            <entry
+                name="message"
+                string="Missing permissions required by BluetoothAdapter.enable: %1$s"/>
+        </map>
+    </incident>
+
+    <incident
+        id="MissingPermission"
+        severity="error"
+        message="">
+        <fix-data missing="android.permission.BLUETOOTH_CONNECT" message="Missing permissions required by BluetoothAdapter.disable: %1$s" lastApi="2147483647"/>
+        <location
+            file="${:muse-systemui*debug*MAIN*sourceProvider*0*javaDir*2}/com/muse/systemui/ui/QuickSettings.kt"
+            line="212"
+            column="13"
+            startOffset="7595"
+            endLine="212"
+            endColumn="40"
+            endOffset="7622"/>
+        <map>
+            <entry
+                name="requirement"
+                string="android.permission.BLUETOOTH_CONNECT"/>
+            <entry
+                name="message"
+                string="Missing permissions required by BluetoothAdapter.disable: %1$s"/>
+        </map>
+    </incident>
+
+</incidents>

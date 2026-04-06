@@ -1,0 +1,17 @@
+/* Galaxy Design System - Space-themed visual language */
+
+:root {
+  --galaxy-deep-space: #0a0e27;
+  --galaxy-nebula: #1a1f4d;
+  --galaxy-star: #ffffff;
+  --galaxy-purple: #6b4ce6;
+  --galaxy-blue: #4e9af1;
+  
+  --galaxy-glow: 0 0 20px rgba(107, 76, 230, 0.5);
+}
+
+.galaxy-element {
+  background: linear-gradient(135deg, var(--galaxy-nebula), var(--galaxy-deep-space));
+  box-shadow: var(--galaxy-glow);
+  border-radius: 20px;
+}

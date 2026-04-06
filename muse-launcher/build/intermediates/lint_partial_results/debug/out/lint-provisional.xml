@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.2.0" type="conditional_incidents">
+
+    <incident
+        id="QueryAllPackagesPermission"
+        severity="error"
+        message="A `&lt;queries>` declaration should generally be used instead of QUERY_ALL_PACKAGES; \&#xA;see https://g.co/dev/packagevisibility for details">
+        <location
+            file="${:muse-launcher*debug*MAIN*sourceProvider*0*manifest*0}"
+            line="4"
+            column="22"
+            startOffset="131"
+            endLine="4"
+            endColumn="74"
+            endOffset="183"/>
+        <map>
+            <condition targetGE="30"/>
+        </map>
+    </incident>
+
+    <incident
+        id="QueryPermissionsNeeded"
+        severity="warning"
+        message="Consider adding a `&lt;queries>` declaration to your manifest when calling this \&#xA;method; see https://g.co/dev/packagevisibility for details">
+        <location
+            file="${:muse-launcher*debug*MAIN*sourceProvider*0*javaDir*2}/com/muse/launcher/data/AppRepository.kt"
+            line="26"
+            column="35"
+            startOffset="896"
+            endLine="26"
+            endColumn="56"
+            endOffset="917"/>
+        <map>
+            <entry
+                name="queryAll"
+                boolean="false"/>
+        </map>
+    </incident>
+
+    <incident
+        id="MissingPermission"
+        severity="error"
+        message="">
+        <fix-data missing="android.permission.VIBRATE" message="Missing permissions required by Vibrator.vibrate: %1$s" lastApi="2147483647"/>
+        <location
+            file="${:muse-launcher*debug*MAIN*sourceProvider*0*javaDir*2}/com/muse/launcher/ui/GestureHandler.kt"
+            line="72"
+            column="13"
+            startOffset="2019"
+            endLine="74"
+            endColumn="14"
+            endOffset="2141"/>
+        <map>
+            <entry
+                name="requirement"
+                string="android.permission.VIBRATE"/>
+            <entry
+                name="message"
+                string="Missing permissions required by Vibrator.vibrate: %1$s"/>
+        </map>
+    </incident>
+
+    <incident
+        id="MissingPermission"
+        severity="error"
+        message="">
+        <fix-data missing="android.permission.VIBRATE" message="Missing permissions required by Vibrator.vibrate: %1$s" lastApi="2147483647"/>
+        <location
+            file="${:muse-launcher*debug*MAIN*sourceProvider*0*javaDir*2}/com/muse/launcher/ui/GestureHandler.kt"
+            line="77"
+            column="13"
+            startOffset="2208"
+            endLine="77"
+            endColumn="39"
+            endOffset="2234"/>
+        <map>
+            <entry
+                name="requirement"
+                string="android.permission.VIBRATE"/>
+            <entry
+                name="message"
+                string="Missing permissions required by Vibrator.vibrate: %1$s"/>
+        </map>
+    </incident>
+
+</incidents>

@@ -1,0 +1,21 @@
+/* FlatUI Design System - Minimalist modern interface */
+
+:root {
+  --flat-primary: #3498db;
+  --flat-secondary: #2ecc71;
+  --flat-accent: #e74c3c;
+  --flat-dark: #34495e;
+  --flat-light: #ecf0f1;
+  
+  --flat-spacing: 16px;
+  --flat-radius: 4px;
+}
+
+.flat-button {
+  background: var(--flat-primary);
+  border: none;
+  border-radius: var(--flat-radius);
+  padding: 12px 24px;
+  color: white;
+  font-weight: 600;
+}

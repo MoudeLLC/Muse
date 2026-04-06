@@ -1,0 +1,29 @@
+--- a/services/core/java/com/android/server/SystemServer.java
++++ b/services/core/java/com/android/server/SystemServer.java
+@@ -1,6 +1,7 @@
+ package com.android.server;
+ 
+ import android.util.Slog;
++import android.util.Log;
+ 
+ /**
+  * The main entry point from zygote.
+@@ -8,6 +9,8 @@
+ public final class SystemServer {
+     private static final String TAG = "SystemServer";
+     
++    private static final String MUSEOS_TAG = "MuseOS-System";
++    
+     /**
+      * The main entry point from zygote.
+      */
+@@ -15,6 +18,9 @@
+         // Mmmmmm, more memory!
+         dalvik.system.VMRuntime.getRuntime().clearGrowthLimit();
+         
++        // MuseOS initialization
++        Log.i(MUSEOS_TAG, "🎨 MuseOS System Server starting...");
++        
+         // The system server has to run all of the time, so it needs to be
+         // as efficient as possible with its memory usage.
+         VMRuntime.getRuntime().setTargetHeapUtilization(0.8f);
